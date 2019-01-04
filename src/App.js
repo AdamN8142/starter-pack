@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import Nav from './Nav.js';
 
 class App extends Component {
   constructor(){
     super();
     this.state ={
       quizData: [],
-
     }
   }
 
@@ -25,7 +25,7 @@ class App extends Component {
 
   render() {
     return (
-      
+      <h1>hi</h1>
     )
   }
 }
