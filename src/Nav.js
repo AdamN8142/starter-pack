@@ -11,7 +11,11 @@ class Nav extends Component {
     render() {
         return (
             <div>
-                
+                <button>JavaScript</button>
+                <button>Git Commands</button>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>Around The Basement</button>
             </div>
         )
     }
