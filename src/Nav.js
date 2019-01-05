@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class Nav extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
 
         }
@@ -10,7 +10,9 @@ class Nav extends Component {
 
     render() {
         return (
-            <h1>hi</h1>
+            <div>
+                
+            </div>
         )
     }
 }
