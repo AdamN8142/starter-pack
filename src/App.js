@@ -1,22 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Nav from './Nav.js';
 
 class App extends Component {
   constructor(){
-    super()
-
+    super();
+    this.state ={
+      quizData: [],
+    }
   }
 
 
   componenetDidMount(){
-
+    fetch("http://memoize-datasets.herokuapp.com/api/v1/adamData")
+      .then(data => data.json())
+      .then(results => {
+        this.setState({
+          quizData: results.adamData
+        })
+      })
+      .catch(error => console.log(error));
   }
 
-  
+
   render() {
     return (
-      <h1>Hello</h1>
+      <h1>hi</h1>
     )
   }
 }
