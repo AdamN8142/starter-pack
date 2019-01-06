@@ -1,8 +1,7 @@
-.individual-question {
-    margin-top: 20px;
-    padding: 15px;
+.individual-question-card {
+    margin-top: 15px;
+    padding: 10px;
     background-color: rebeccapurple;
-
 }
 
 .answer-buttons {
@@ -11,4 +10,9 @@
     margin: auto;
     width: 170px;
     text-align: center;
+}
+
+.card-question {
+    text-align: center;
+    color: white;
 }

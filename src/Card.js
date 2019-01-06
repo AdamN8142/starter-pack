@@ -7,8 +7,8 @@ class Card extends Component {
     }
     render() {
         return(
-          <div className="individual-question">
-            <p>{this.props.question}</p>
+          <div className="individual-question-card">
+            <p className ="card-question">{this.props.question}</p>
             {
                 this.props.answers.map((answer) => {
                     return (<button className="answer-buttons">{answer}</button>)
