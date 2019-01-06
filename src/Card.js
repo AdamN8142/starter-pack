@@ -7,11 +7,11 @@ class Card extends Component {
     }
     render() {
         return(
-          <div>
+          <div className="individual-question">
             <p>{this.props.question}</p>
             {
                 this.props.answers.map((answer) => {
-                    return (<button>{answer}</button>)
+                    return (<button className="answer-buttons">{answer}</button>)
                 })
             }
         
