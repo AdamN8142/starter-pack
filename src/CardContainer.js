@@ -10,8 +10,6 @@ class CardContainer extends Component {
         }
     }
 
-
-
     render() {
         return(
             <div>
