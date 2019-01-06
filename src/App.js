@@ -40,7 +40,7 @@ class App extends Component {
       <div className="app-page">
         <h1 className="page-header">Mod-1 Starter Pack</h1>
         <Nav grabCategory= {this.grabCategory} />
-        <CardContainer grabCategory= {this.state.selectedCategory} />
+        <CardContainer selectedCategory= {this.state.selectedCat} />
       </div>
     )
   }

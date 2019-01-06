@@ -1,4 +1,4 @@
-import React, { Componenet } from 'react';
+import React, { Component } from 'react';
 
 
 class Card extends Component {
@@ -8,10 +8,13 @@ class Card extends Component {
     render() {
         return(
           <div>
-            <p>{props.question}</p>
-            <button>{props.category.possibleAnswer}</button>
-            <button>{props.category.possibleAnswer}</button>
-            <button>{props.category.possibleAnswer}</button>
+            <p>{this.props.question}</p>
+            {
+                this.props.answers.map((answer) => {
+                    return (<button>{answer}</button>)
+                })
+            }
+        
           </div>   
         )
     }
