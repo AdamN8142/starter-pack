@@ -10,9 +10,8 @@ class Card extends Component {
           <div className="individual-question-card">
             <p className ="card-question">{this.props.question}</p>
             {
-                this.props.answers.map((answer) => {
-                    return (<button className="answer-buttons">{answer}</button>)
-                })
+              this.props.answers.map((answer) => {
+                return (<button className="answer-buttons">{answer}</button>)})
             }
         
           </div>   
